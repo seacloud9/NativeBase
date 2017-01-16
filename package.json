@@ -17,7 +17,8 @@
   "scripts": {
     "compile": "rm -rf dist/* && babel . --out-dir dist --ignore node_modules,dist --source-maps",
     "test": "jest",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "postinstall": "npm install --save react-native-vector-icons@4.0.0"
   },
   "jest": {
     "preset": "react-native"
@@ -31,8 +32,7 @@
     "lodash": "~4.11.1",
     "react-native-checkbox": "~1.0.8",
     "react-native-easy-grid": "0.1.8",
-    "react-native-keyboard-aware-scroll-view": "0.2.0",
-    "react-native-vector-icons": "~4.0.0"
+    "react-native-keyboard-aware-scroll-view": "0.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -80,7 +80,8 @@
   "optionalDependencies": {},
   "peerDependencies": {
     "react-native": ">=0.40.0",
-    "react": ">=15.4.0"
+    "react": ">=15.4.0",
+    "react-native-vector-icons": "~4.0.0"
   },
   "repository": {
     "type": "git",
